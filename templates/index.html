@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaperSage - Ask Your Questions</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="app-container">
+        <h1> PaperSage </h1>
+        <div class="features-container">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="feature-text">
+                    <p>Search Documents</p>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <div class="feature-text">
+                    <p>Smart Answers</p>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <div class="feature-text">
+                    <p>Document Analysis</p>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="feature-text">
+                    <p>Learn From Data</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-container">
+            {% if response %}
+            <div class="response-section">
+                <div class="question-bubble">
+                    <p>{{ query }}</p>
+                </div>
+                <div class="answer-bubble">
+                    <p>{{ response }}</p>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+
+        <div class="input-container">
+            <form action="/query" method="POST" class="query-form">
+                <div class="input-wrapper">
+                    <input type="text" id="query_text" name="query_text" required placeholder="Chat with PaperSage...">
+                    <button type="submit">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 PaperSage</p>
+        </div>
+    </div>
+</body>
+</html>

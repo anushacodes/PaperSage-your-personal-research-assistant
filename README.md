@@ -45,7 +45,7 @@ This project implements a **Retrieval-Augmented Generation (RAG)** system using 
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/anushacodes/pdf-rag-system.git  # CORRECT THIS
+   git clone https://github.com/anushacodes/PaperSage-your-personal-research-assistant.git
    cd pdf-rag-system
    ```
 2. **Install Dependencies**

@@ -3,6 +3,10 @@ PaperSage is a lightweight AI assistant for answering questions from research pa
 
 This project implements a **Retrieval-Augmented Generation (RAG)** system using **LangChain, ChromaDB, and Ollama** for querying PDF documents efficiently. It enables embedding text from PDFs, storing it in a vector database, and retrieving contextually relevant information using an **LLM (Mistral via Ollama)**.
 
+<p align="center">
+  <img width="600" alt="Screenshot 2025-03-27 at 10 14 36 PM" src="https://github.com/user-attachments/assets/3f5e0936-c131-42cb-b93e-660909b2d78d" />
+</p>
+
 ## 🚀 Features
 
 - **PDF Document Ingestion**: Automatically loads and processes PDFs from the `data/` directory.
@@ -71,6 +75,9 @@ Ask a question based on stored documents:
 ```bash
 python query.py --query "Describe the attention mechanism"
 ```
+<p align="center">
+  <img width="600" alt="Screenshot 2025-03-27 at 10 34 09 PM" src="https://github.com/user-attachments/assets/b7e36a2d-3b6c-42ec-83a3-a290bce3cd53" />
+</p>
 
 ### 3️⃣ Interactive CLI Mode
 
